@@ -1,0 +1,6 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><%= @status %></p>
+
+<%= link_to "Edit the task", task_edit_path %>
+<%= link_to "Delete a task", task_destroy_path(@task), method: :delete %>
